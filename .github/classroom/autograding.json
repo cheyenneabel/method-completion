@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Method&#45;Completion",
+      "setup": "",
+      "run": "gradle test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
