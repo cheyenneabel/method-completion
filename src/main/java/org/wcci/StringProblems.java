@@ -57,12 +57,13 @@ public class StringProblems {
      * - stringCombiner("Zizzer" "zazzer") -> "zazzerZizzer"
      */
     public String stringCombiner(String stringA, String stringB) {
-            int alphabet = stringA.compareTo(stringB);
-            if (alphabet > 0) {
-                return "stringA" + "stringB";
 
-            } if (alphabet < 0) {
-                return "stringB" + "stringA";
+        int alphabet = stringA.compareToIgnoreCase(stringB);
+
+            if (alphabet < 0) {
+                return stringA + stringB;
+            } if (alphabet > 0) {
+                return stringB + stringA;
             } else return "These strings are equal.";
     }
 
