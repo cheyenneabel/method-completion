@@ -14,8 +14,14 @@ public class WarmupProblems {
      * - stringTimes("Hi", 1) → "Hi"
      */
     public String stringTimes(String str, int n) {
-        //TODO Add the code here that meets the requirements of the problem in the comment above.
-        return null;
+
+        String returnVal;
+        returnVal = "";
+            for(int i = 1; i <= n; i++) {
+                returnVal = returnVal + str;
+            }
+
+        return returnVal;
     }
 
     /*
@@ -29,8 +35,13 @@ public class WarmupProblems {
      * - icyHot(2, 120) → false
      */
     public boolean icyHot(int temp1, int temp2) {
-        //TODO Add the code here that meets the requirements of the problem in the comment above.
-        return false;
+
+        if(temp1 < 0 && temp2 > 100) {
+            return true;
+        }
+            if(temp1 > 100 && temp2 < 0) {
+            return true;
+        } else return false;
     }
 
 }

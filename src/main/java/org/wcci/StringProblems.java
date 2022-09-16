@@ -15,10 +15,17 @@ public class StringProblems {
      * - smallestStringSorter("zizzer", "zazzer") -> "zizzerzazzer"
      */
 
-    public String smallestStringSorter(String stringA, String stringB){
-        //TODO Add the code here that meets the requirements of the problem in the comment above.
-        return null;
+    public String smallestStringSorter(String stringA, String stringB) {
+        String stringLong = stringA + stringB;
+        if (stringA.length() == 0 || stringA.length() > stringB.length()) {
+            return stringB;
+        } if (stringB.length() == 0 || stringB.length() > stringA.length()) {
+            return stringA;
+        } else if (stringB.equals(stringA)); {
+            return stringLong;
+        }
     }
+
 
     /*
      * evenUpperCaseOrOddLowerCase()
@@ -30,9 +37,13 @@ public class StringProblems {
      * - evenUpperCaseOrOddLowerCase("Hello") -> "hello"
      * - evenUpperCaseOrOddLowerCase("Zizzer Zazzer Zuzz") -> "ZIZZER ZAZZER ZUZZ"
      */
-    public String evenUpperCaseOrOddLowerCase(String str){
-        //TODO Add the code here that meets the requirements of the problem in the comment above.
-        return null;
+
+        public String evenUpperCaseOrOddLowerCase(String str){
+        if(str.length() % 2 == 0) {
+            return str.toUpperCase();
+        } else {
+            return str.toLowerCase();
+        }
     }
 
     /*
@@ -45,9 +56,14 @@ public class StringProblems {
      * - stringCombiner("Hello", "There") -> "HelloThere"
      * - stringCombiner("Zizzer" "zazzer") -> "zazzerZizzer"
      */
-    public String stringCombiner(String stringA, String stringB){
-        //TODO Add the code here that meets the requirements of the problem in the comment above.
-        return null;
+    public String stringCombiner(String stringA, String stringB) {
+            int alphabet = stringA.compareTo(stringB);
+            if (alphabet > 0) {
+                return "stringA" + "stringB";
+
+            } if (alphabet < 0) {
+                return "stringB" + "stringA";
+            } else return "These strings are equal.";
     }
 
     /*
@@ -62,7 +78,6 @@ public class StringProblems {
      */
 
     public String left2(String str){
-        //TODO Add the code here that meets the requirements of the problem in the comment above.
-        return null;
+        return (str.substring(2) + str.substring(0, 2));
     }
 }
