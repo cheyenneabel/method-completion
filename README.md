@@ -19,8 +19,3 @@ This is a Pass/Fail assignment, the assignment will be considered passing if it 
 - The code compiles.  (No red squiggly underlines!)
 - 7 of 8 methods meet the requirements as described in the comments above the method.  This will be verified with the provided unit tests.
 
-If your project doesn't meet these criteria at the deadline, it will be marked as _Needs Improvement_.
-
-If your project is evaluated as _Incomplete_ or _Needs Improvement_ we will let you know and give you feed back on what needs to change to help move it to a passing project.
-You will receive a new deadline of Friday, November 30th, at 9:30 to re-submit your project by pushing changes to GitHub.  
-We will evaluate the project one more time and record this as the final grade for this project with _Incompletes_ and _Needs Improvements_ being set to _Fail_ on the _Pass/Fail_ scale.
